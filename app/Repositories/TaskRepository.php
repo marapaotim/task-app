@@ -15,6 +15,19 @@ class TaskRepository extends BaseRepository implements TaskRepositoryInterface
         parent::__construct($model);
     }
 
+    /**
+     * fetching the paginated data
+     *
+     * @param $limit    filter limit the task display per page
+     * @param $status   filter status for the tasks data
+     * @param $sortTitle sorting of data base on title
+     * @param $sortDate sorting of data base on date created
+     * @param $searchSaveStatus filter data based on search save status
+     * @param $search   filter data base on search by title    
+     *
+     * @return Task data
+     */
+
     public function fetchTaskPaginate($limit, $status, $sortTitle, $sortDate, $searchSaveStatus, $search) {
         $query = $this->newQuery()->where(['user_id' => Auth::id(), 'removed' => 0]);
 

@@ -15,6 +15,13 @@ class UserService implements UserServiceInterface
         $this->userRepository = $userRepository;
     }
 
+    /**
+     * Creating user
+     *
+     * @param $data    data of the user   
+     *
+     * @return User data
+     */
     public function create($data)
     {
     	$data = array_merge($data, [
