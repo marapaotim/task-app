@@ -16,7 +16,7 @@ class TaskRequest extends FormRequest
     }
 
     /**
-     * Get the validation rules that apply to the request.
+     * Implement validation for creating/updating task with adding conditional unique for each task
      *
      * @return array<string, \Illuminate\Contracts\Validation\ValidationRule|array<mixed>|string>
      */

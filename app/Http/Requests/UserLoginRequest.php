@@ -15,7 +15,7 @@ class UserLoginRequest extends FormRequest
     }
 
     /**
-     * Get the validation rules that apply to the request.
+     * Implement validation for email and password login
      *
      * @return array<string, \Illuminate\Contracts\Validation\ValidationRule|array<mixed>|string>
      */

@@ -10,6 +10,9 @@ use Illuminate\Http\Request;
 
 class UserController extends Controller
 {
+    /**
+     * @var UserService
+     */
     private $userService;
 
     public function __construct(UserServiceInterface $userService)

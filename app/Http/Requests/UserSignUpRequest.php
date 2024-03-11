@@ -15,7 +15,7 @@ class UserSignUpRequest extends FormRequest
     }
 
     /**
-     * Get the validation rules that apply to the request.
+     * Implement validation for Sign Up User
      *
      * @return array<string, \Illuminate\Contracts\Validation\ValidationRule|array<mixed>|string>
      */

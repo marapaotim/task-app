@@ -8,6 +8,9 @@ use App\Http\Requests\TaskRequest;
 
 class TaskController extends Controller
 {
+    /**
+     * @var TaskService
+     */
     private $taskService;
 
     public function __construct(TaskServiceInterface $taskService)
